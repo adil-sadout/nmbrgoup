@@ -4,7 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from "@material-ui/core/IconButton";
 import Box from "@material-ui/core/Box";
 import {NavLink} from "react-router-dom";
-import { ContainedButton } from '@iktakahiro/gradient-mui-button'
+import Button from "@material-ui/core/Button";
 
 export default function App() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -22,20 +22,19 @@ export default function App() {
           onClose={()=> setIsDrawerOpen(false)}
           
         >
-          <Box sx={{width:"200px", fontSize:"24px",fontFamily:"Courier , sans-serif", fontWeight:"bold", display:"flex",justifyContent:"center", alignItems:"center",flexDirection:"column" , marginTop:"25px", mx:"20px"}}>
-            <ContainedButton style={{margin:0}} color="primary">
-                Connect
-            </ContainedButton>
+          <Box sx={{width:"200px", fontSize:"24px", fontWeight:"bold", display:"flex",justifyContent:"center", alignItems:"center",flexDirection:"column" , marginTop:"50px", mx:"20px"}}>
 
-            <NavLink to="/Dashboard" style={{color:"black", paddingTop:"50px"}}>
+          <Button style={{color:"white",background: 'linear-gradient(to right, #02aab0, #00cdac)', fontFamily:"poppins", fontSize:"24px"}} variant="text">Connect</Button>
+
+            <NavLink to="/Dashboard" style={{color:"black", marginTop:"50px", padding:"5px"}}>
               DASHBOARD
             </NavLink>
             
-            <NavLink to="/Calculator" style={{color:"black", paddingTop:"50px"}}>
+            <NavLink to="/Calculator" style={{color:"black", marginTop:"50px", padding:"5px"}}>
               CALCULATOR
             </NavLink>
             
-            <NavLink to="/Swap" style={{color:"black", paddingTop:"50px"}}>
+            <NavLink to="/Swap" style={{color:"black", marginTop:"50px", padding:"5px"}}>
               SWAP
             </NavLink>
           </Box>

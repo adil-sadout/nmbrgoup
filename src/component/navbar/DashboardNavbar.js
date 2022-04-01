@@ -1,9 +1,9 @@
 import React from 'react'
 import {NavLink} from "react-router-dom"
-import { ContainedButton } from '@iktakahiro/gradient-mui-button'
+import Button from '@mui/material/Button';
 import Container from '@mui/material/Container'
 import Box from '@material-ui/core/Box';
-import Grid from '@material-ui/core/Grid';
+
 
 function DashboardNavbar() {
 
@@ -12,46 +12,50 @@ function DashboardNavbar() {
 
 
   return (
-    <Container sx={{fontSize:"24px", textAlign:"center",fontStyle:"",margin:0, padding:0, minHeight:"100px", display:"flex", justifyContent:"space-between", alignItems:"center"}}>
+    <Container sx={{fontSize:"20px", textAlign:"center",margin:0, padding:0, minHeight:"100px", display:"flex", alignItems:"center", width:"90vh", justifyContent:"end"}}>
         
     
-        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-            <Grid item xs={4}>
-                <Box px={5}>
+        <Box sx={{width:"500px", display:"flex",justifyContent:"space-around", alignItems:"center"}}>
+
+            
                     <NavLink 
                     style={({ isActive }) => ({
-                        borderBottom: isActive ? '1px solid #4BB3FD' :"white",
-                        paddingBottom:isActive? "5px":"0"
+                        borderBottom: isActive ? '2px solid #02AAB0' :"white",
+                        paddingBottom:isActive ? "5px":"0",
+                        padding:"inherit 10px"
                       })}
-                    to="/Dashboard">DASHBOARD</NavLink>
-                </Box>
-            </Grid>
-            <Grid item xs={4}>
-                <Box px={5}>
+                    to="/Dashboard">Dashboard</NavLink>
+            
+            
+            
                     <NavLink 
                     style={({ isActive }) => ({
-                        borderBottom: isActive ? '1px solid #4BB3FD' :"white",
+                        borderBottom: isActive ? '2px solid #02AAB0' :"white",
                         paddingBottom:isActive? "5px":"0"
                       })}
-                    to="/Calculator">CALCULATOR</NavLink>
-                </Box>
-            </Grid>
-            <Grid item xs={4}>
-                <Box px={5}>
+                    to="/Calculator">Calculator</NavLink>
+            
+
+            
                     <NavLink 
                     style={({ isActive }) => ({
-                        borderBottom: isActive ? '1px solid #4BB3FD' :"white",
+                        borderBottom: isActive ? '2px solid #02AAB0' :"white",
                         paddingBottom:isActive? "5px":"0"
                       })}
-                    to="/Swap">SWAP</NavLink>
-                </Box>
-            </Grid>
-        </Grid>
-        
-        
-        <Box p={1}>
-            <ContainedButton style={{margin:0}} color="default">Connect</ContainedButton>
+                    to="/Swap">Swap</NavLink>
+
+                    <NavLink to="#">
+                        <Button style={{background: 'linear-gradient(to right, #02aab0, #00cdac)', fontFamily:"poppins", fontWeight:"bold", color:"white", padding:"6px 10px", fontSize:"16px", letterSpacing:"2px"}}  variant="text">Connect</Button>
+                    </NavLink>
+            
+
+            
+
         </Box>
+        
+        
+        
+        
     </Container>
   )
 }

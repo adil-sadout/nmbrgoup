@@ -1,9 +1,12 @@
 import Container from "@mui/material/Container"
+import Box from "@mui/material/Box"
 
 function LandingPage() {
   return (
-    <Container sx={{backgroundColor:"#202337", borderRadius:"1rem", padding:"1rem"}}>
-        LandingPage
+    <Container>
+      <Box>
+        
+      </Box>
     </Container>
   )
 }

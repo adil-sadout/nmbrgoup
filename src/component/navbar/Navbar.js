@@ -21,10 +21,10 @@ function Navbar() {
     
 
     return (
-        <Container maxWidth="lg" sx={{fontFamily:"lato, sans-serif", letterSpacing:"2px", minHeight:"100px", width:"100vw",display:"flex", justifyContent:"space-between", alignItems:"center"}}>
+        <Container maxWidth="lg" sx={{letterSpacing:"2px", minHeight:"100px", width:"100vw",display:"flex", justifyContent:"space-between", alignItems:"center"}}>
             <Box sx={{underline:"none", display:"flex", justifyContent:"center", alignItems:"center"}} p={1}>
                 <NavLink className="" to="/">    
-                    <img width="80px" src="assets/globe-lineal.png" alt="" />
+                    <img width="60px" src="assets/snake.gif" alt="" />
                 </NavLink>
             </Box>
             <Box sx={{underline:"none", display:"inline-block"}} p={1}>
