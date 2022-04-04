@@ -2,7 +2,7 @@ import { Line } from 'react-chartjs-2';
 import Chart from 'chart.js/auto'
 function BarChart() {
   return (
-    <div>
+    <div className='min-vh-50'>
         <Line
         data={{
         labels: ['01', '02', '03', '04', '05', '06'],
@@ -28,7 +28,7 @@ function BarChart() {
             borderWidth: 1
         },
         {
-            label: 'Times I banged ur mom',
+            label: 'ur mom',
             data: [6, 9, 13, 1, 5, 25],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
