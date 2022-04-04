@@ -9,7 +9,7 @@ function Part1() {
         </Box>
         <Box sx={{height:"70vh", display:"flex", flexDirection:"column",justifyContent:"center", alignItems:"center"}}>
             <p className="display-1 fw-bold" >
-            The S&P 500 of Crypto
+            Easy is a pussio
             </p>
             <p>
             With one token get exposure to a diversified portfolio of projects across multiple chains.
