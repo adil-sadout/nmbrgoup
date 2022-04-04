@@ -10,7 +10,7 @@ function LandingNavbar() {
         
         <Box  p={1}>
             <NavLink to="/Dashboard">
-              <Button style={{background: 'linear-gradient(to right, #02aab0, #00cdac)', fontFamily:"poppins", fontWeight:"bold", letterSpacing:"2px"}}  variant="outlined">Access Dashboard</Button>
+              <Button style={{background: 'linear-gradient(to bottom, #E5F0FF, #2F80E8)', fontFamily:"poppins", fontWeight:"bold", letterSpacing:"2px"}}  variant="text">Access Dashboard</Button>
             </NavLink>
         </Box>
     </Container>

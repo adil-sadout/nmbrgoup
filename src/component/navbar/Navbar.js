@@ -24,7 +24,7 @@ function Navbar() {
         <Container maxWidth="lg" sx={{letterSpacing:"2px", minHeight:"100px", width:"100vw",display:"flex", justifyContent:"space-between", alignItems:"center"}}>
             <Box sx={{underline:"none", display:"flex", justifyContent:"center", alignItems:"center"}} p={1}>
                 <NavLink className="" to="/">    
-                    <img width="60px" src="assets/snake.gif" alt="" />
+                    <img width="100px" src="assets/logomkr4.png" alt="" />
                 </NavLink>
             </Box>
             <Box sx={{underline:"none", display:"inline-block"}} p={1}>

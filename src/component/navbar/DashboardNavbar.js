@@ -20,8 +20,9 @@ function DashboardNavbar() {
             
                     <NavLink 
                     style={({ isActive }) => ({
-                        borderBottom: isActive ? '2px solid #02AAB0' :"white",
-                        paddingBottom:isActive ? "5px":"0",
+                        borderBottom: isActive ? '2px solid #8768C5' :"white",
+                        paddingBottom: isActive ? "5px":"0",
+                        color: isActive ? "#8768C5":"white",
                         padding:"inherit 10px"
                       })}
                     to="/Dashboard">Dashboard</NavLink>
@@ -30,7 +31,8 @@ function DashboardNavbar() {
             
                     <NavLink 
                     style={({ isActive }) => ({
-                        borderBottom: isActive ? '2px solid #02AAB0' :"white",
+                        borderBottom: isActive ? '2px solid #8768C5' :"white",
+                        color: isActive ? "#8768C5":"white",
                         paddingBottom:isActive? "5px":"0"
                       })}
                     to="/Calculator">Calculator</NavLink>
@@ -39,13 +41,14 @@ function DashboardNavbar() {
             
                     <NavLink 
                     style={({ isActive }) => ({
-                        borderBottom: isActive ? '2px solid #02AAB0' :"white",
-                        paddingBottom:isActive? "5px":"0"
+                        borderBottom: isActive ? '2px solid #8768C5' :"white",
+                        paddingBottom:isActive? "5px":"0",
+                        color: isActive ? "#8768C5":"white",
                       })}
                     to="/Swap">Swap</NavLink>
 
                     <NavLink to="#">
-                        <Button style={{background: 'linear-gradient(to right, #02aab0, #00cdac)', fontFamily:"poppins", fontWeight:"bold", color:"white", padding:"6px 10px", fontSize:"16px", letterSpacing:"2px"}}  variant="text">Connect</Button>
+                        <Button style={{background: 'linear-gradient(to right, #8768C5, #2F80E8)', fontFamily:"poppins", fontWeight:"bold", color:"white", padding:"6px 10px", fontSize:"16px", letterSpacing:"2px"}}  variant="text">Connect</Button>
                     </NavLink>
             
 
