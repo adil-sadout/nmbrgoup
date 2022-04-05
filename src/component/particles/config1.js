@@ -115,7 +115,7 @@ export const config1 = {
       },
       size: {
         random: true,
-        value: 15,
+        value: 30,
       },
       
     },
