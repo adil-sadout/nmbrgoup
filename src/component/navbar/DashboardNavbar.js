@@ -20,9 +20,9 @@ function DashboardNavbar() {
             
                     <NavLink 
                     style={({ isActive }) => ({
-                        borderBottom: isActive ? '2px solid #8768C5' :"white",
+                        borderBottom: isActive ? '2px solid #BFDBF7' :"white",
                         paddingBottom: isActive ? "5px":"0",
-                        color: isActive ? "#8768C5":"white",
+                        color: isActive ? "#BFDBF7":"white",
                         padding:"inherit 10px"
                       })}
                     to="/Dashboard">Dashboard</NavLink>
@@ -31,8 +31,8 @@ function DashboardNavbar() {
             
                     <NavLink 
                     style={({ isActive }) => ({
-                        borderBottom: isActive ? '2px solid #8768C5' :"white",
-                        color: isActive ? "#8768C5":"white",
+                        borderBottom: isActive ? '2px solid #BFDBF7' :"white",
+                        color: isActive ? "#BFDBF7":"white",
                         paddingBottom:isActive? "5px":"0"
                       })}
                     to="/Calculator">Calculator</NavLink>
@@ -41,14 +41,14 @@ function DashboardNavbar() {
             
                     <NavLink 
                     style={({ isActive }) => ({
-                        borderBottom: isActive ? '2px solid #8768C5' :"white",
+                        borderBottom: isActive ? '2px solid #BFDBF7' :"white",
                         paddingBottom:isActive? "5px":"0",
-                        color: isActive ? "#8768C5":"white",
+                        color: isActive ? "#BFDBF7":"white",
                       })}
                     to="/Swap">Swap</NavLink>
 
                     <NavLink to="#">
-                        <Button style={{background: 'linear-gradient(to right, #8768C5, #2F80E8)', fontFamily:"poppins", fontWeight:"bold", color:"white", padding:"6px 10px", fontSize:"16px", letterSpacing:"2px"}}  variant="text">Connect</Button>
+                        <Button className='btnStyle' style={{padding:"6px 10px", fontSize:"16px"}}  variant="text">Connect</Button>
                     </NavLink>
             
 

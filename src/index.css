@@ -6,6 +6,8 @@ body {
   font-family: "poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  cursor: url("../public/assets/iconbrain3.png"), auto ;
 }
 
 a{
@@ -18,5 +20,16 @@ p{
   margin: 0;
 }
 
+.regularBackground{
+  background-color: #0F1228;
+}
+
+.btnStyle{
+  background: linear-gradient(to bottom, #E5F0FF, #2F80E8) !important;
+  font-family:"poppins" !important;
+  font-weight:bold !important;
+  letter-spacing: 2px !important;
+  color: black !important;
+}
 
 

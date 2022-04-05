@@ -4,7 +4,7 @@ import Paper from "@mui/material/Paper"
 function Part3() {
   return (
     <>
-      <Paper elevation={0} sx={{marginY:"100px",textAlign:"center",height:"80vh", backgroundColor:"inherit", flexDirection:"column",display:"flex", justifyContent:"center", alignItems:"center"}}>
+      <Paper elevation={0}   style={{backgroundColor:"inherit"}}  sx={{marginY:"100px",textAlign:"center",height:"80vh", flexDirection:"column",display:"flex", justifyContent:"center", alignItems:"center"}}>
         <Box sx={{padding:"50px"}}>
         <p className="fw-bold fs-6" style={{ color:"#d81384"}}>DEEP DEEP POOLS</p>
         <h2 className="display-1 fw-bold p-0" style={{color:"white"}}>Liquidity</h2>
