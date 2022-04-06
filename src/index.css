@@ -22,14 +22,17 @@ p{
 
 .regularBackground{
   background-color: #0F1228;
+  
 }
 
 .btnStyle{
-  background: linear-gradient(to bottom, #E5F0FF, #2F80E8) !important;
+  background: linear-gradient(to bottom, #06dfc2, #0575e6) !important;
+  
   font-family:"poppins" !important;
   font-weight:bold !important;
   letter-spacing: 2px !important;
-  color: black !important;
+  border-radius: 50px !important;
+  color: white !important;
 }
 
 
