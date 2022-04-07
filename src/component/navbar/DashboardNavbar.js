@@ -48,7 +48,7 @@ function DashboardNavbar() {
                     to="/Swap">Swap</NavLink>
 
                     <NavLink to="#">
-                        <Button className='btnStyle' style={{padding:"6px 10px", fontSize:"16px"}}  variant="text">Connect</Button>
+                        <Button className='btnStyle' style={{padding:"6px 15px", fontSize:"16px"}}  variant="text">Connect</Button>
                     </NavLink>
             
 

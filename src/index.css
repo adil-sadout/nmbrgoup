@@ -7,7 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  cursor: url("../public/assets/iconbrain3.png"), auto ;
+  cursor: url("../public/assets/mouse.png"), auto ;
 }
 
 a{
@@ -22,7 +22,10 @@ p{
 
 .regularBackground{
   background-color: #0F1228;
-  
+}
+
+.secondaryBackground{
+  background: linear-gradient(to bottom, #06dfc2, #0575e6) !important;
 }
 
 .btnStyle{
@@ -31,8 +34,8 @@ p{
   font-family:"poppins" !important;
   font-weight:bold !important;
   letter-spacing: 2px !important;
-  border-radius: 50px !important;
-  color: white !important;
+  border-radius: 25px !important;
+  color: black !important;
 }
 
 

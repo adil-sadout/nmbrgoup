@@ -10,7 +10,7 @@ export const config1 = {
       events: {
         onClick: {
           enable: true,
-          mode: "pause",
+          mode: "push",
         },
         onHover: {
           enable: true,
@@ -27,7 +27,7 @@ export const config1 = {
           size: 40,
         },
         push: {
-          quantity: 4,
+          quantity: 1,
         },
         repulse: {
           distance: 100,

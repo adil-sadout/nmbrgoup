@@ -4,7 +4,7 @@ import Paper from "@mui/material/Paper"
 function Part2() {
   return (
     <>
-        <Paper elevation={3} className="p-5" style={{backgroundColor:"#1D224F"}} sx={{ borderRadius:"20px"}}>
+        <Paper elevation={3} className="p-5 " style={{backgroundColor:"#1D224F"}} sx={{ borderRadius:"20px"}}>
             <div className="grid row p-1 px-sm-5">
                 <Box className="col-md-6  d-flex flex-column justify-content-center ">
                     <p className="fw-bold fs-6" style={{ color:"#d81384"}}>PLANNED PROFITABILITY</p>

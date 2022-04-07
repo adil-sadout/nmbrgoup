@@ -10,7 +10,7 @@ function LandingNavbar() {
         
         <Box  p={1}>
             <NavLink to="/Dashboard">
-              <Button className='btnStyle' variant="text">DAPP</Button>
+              <Button className='btnStyle' style={{padding:"8px 15px"}} variant="text">DASHBOARD</Button>
             </NavLink>
         </Box>
     </Container>

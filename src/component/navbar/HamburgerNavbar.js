@@ -24,7 +24,7 @@ export default function App() {
         >
           <Box sx={{width:"200px", fontSize:"24px", fontWeight:"bold", display:"flex",justifyContent:"center", alignItems:"center",flexDirection:"column" , marginTop:"50px", mx:"20px"}}>
 
-          <Button className="btnStyle" style={{fontSize:"24px"}} variant="text">Connect</Button>
+          <Button className="btnStyle" style={{fontSize:"24px", padding:"5px 20px"}} variant="text">Connect</Button>
 
             <NavLink to="/Dashboard" style={{color:"black", marginTop:"50px", padding:"5px"}}>
               DASHBOARD
