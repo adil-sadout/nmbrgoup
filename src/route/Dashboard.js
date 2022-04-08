@@ -1,28 +1,26 @@
-import Container from "@mui/material/Container"
-import Grid from "@mui/material/Grid"
-import Box from "@mui/material/Box"
+
 import BarChart from "../component/charts/BarChart"
 function Dashboard() {
   return (
     <>
       < >
-        <Grid container spacing={1} className="grid row" sx={{backgroundColor:"#202337", borderRadius:"1rem", padding:"10px", margin:"auto"}}>
+        <div className="container grid row g-1 rounded p-3 m-auto secondary-bg">
           
-          <Box className="col-12 col-md-2"  sx={{textAlign:"center", backgroundColor:"#0F1228", borderTopRightRadius:"10px", borderBottomRightRadius:"10px", padding:"1rem"}}>
+          <div className="col-12 col-md-2 text-center rounded py-3 px-1 primary-bg">
             <p>PORTFOLIO</p>
             <p>0x3096...A246</p>
-          </Box>
+          </div>
 
-          <Box className="col-12 col-md-8 py-1 p-sm-3" sx={{fontWeight:"bold", letterSpacing:"1.5px"}}>
+          <div className="col-12 col-md-8 py-1 p-sm-3 fw-bold" style={{letterSpacing:"1.5px"}}>
             <p>Chart</p>
             <BarChart/>
-          </Box>
+          </div>
         
-          <Box className="col-12 col-md-2" sx={{textAlign:"center", backgroundColor:"#0F1228", borderTopRightRadius:"10px", borderBottomRightRadius:"10px", padding:"1rem"}}>
+          <div className="col-12 col-md-2 text-center rounded py-3 px-1 primary-bg" >
             <p>ur gey</p>
-          </Box>
+          </div>
           
-        </Grid>
+        </div>
       </>
     </>
     

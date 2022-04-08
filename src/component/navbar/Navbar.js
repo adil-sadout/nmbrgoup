@@ -1,46 +1,38 @@
 import DashboardNavbar from './DashboardNavbar'
 import LandingNavbar from './LandingNavbar'
 import HamburgerNavbar from "./HamburgerNavbar"
-import Container from "@mui/material/Container"
 import { useLocation } from 'react-router-dom'
-import Box from "@material-ui/core/Box";
 import {NavLink} from "react-router-dom";
-import { useTheme } from '@mui/system'
-import { useMediaQuery } from '@mui/material'
+
 
 function Navbar() {
 
-    const theme = useTheme();
-
-  // isMobile will be true on screen sizes small or extra small
-    const isMobile = useMediaQuery(theme.breakpoints.down("md"));
     
-
     
     const location = useLocation();
     
 
     return (
-        <Container maxWidth="lg" sx={{letterSpacing:"2px", minHeight:"100px", width:"100vw",display:"flex", justifyContent:"space-between", alignItems:"center"}}>
-            <Box sx={{underline:"none", display:"flex", justifyContent:"center", alignItems:"center"}} p={1}>
+        <div className='container-md d-flex justify-content-between align-items-center' style={{letterSpacing:"2px", minHeight:"80px"}}>
+            <div className='d-flex justify-content-center align-items-center p-1' >
                 <NavLink className="" to="/">    
                     <img width="70px" src="assets/brainlogo.webp" alt="" />
                 </NavLink>
-            </Box>
-            <Box sx={{underline:"none", display:"inline-block"}} p={1}>
+            </div>
+            <div className='d-inline-block p-1'>
             {
                 (location.pathname==="/")?
                 <LandingNavbar/>:
-                <>{
-                    isMobile===false?
-                    <DashboardNavbar/>:
+                <>
+                    
+                    <DashboardNavbar/>
                     <HamburgerNavbar/>
-                }
+                
                 </>
             }
-            </Box>
+            </div>
             
-        </Container>
+        </div>
     )
 }
 

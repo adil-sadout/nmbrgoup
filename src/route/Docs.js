@@ -2,9 +2,9 @@ import Container from "@mui/material/Container"
 
 function Docs() {
   return (
-    <Container sx={{backgroundColor:"#202337", borderRadius:"1rem", padding:"1rem"}}>
-        Docs Page
-    </Container>
+    <div className="rounded-pill p-3  secondary-bg">
+        Docs
+    </div>
   )
 }
 

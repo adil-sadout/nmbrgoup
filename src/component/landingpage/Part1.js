@@ -1,29 +1,25 @@
-import Box from "@mui/material/Box"
-import Button from "@mui/material/Button"
+
 
 function Part1() {
-  /*<Box sx={{zIndex:"-100", position:"absolute", left:"-10%", overflow:"hidden"}}>
-            <img src="assets/worm.png" width="110%" alt="" />
-        </Box>
-  */
+  
   return (
       <>
-        <Box className="" sx={{zIndex:"-10", position:"absolute", left:"25%",overflow:"hidden", backgroundColor:"transparent"}}>
+        <div className="position-absolute overflow-hidden bg-transparent" style={{zIndex:"-10"}}>
             <img src="assets/brainglow3.png" width="80%" alt="" />
-        </Box>
+        </div>
         
-        <Box sx={{height:"80vh", display:"flex", flexDirection:"column",justifyContent:"center", alignItems:"center"}}>
+        <div className="d-flex flex-column justify-content-center align-items-center text-center" style={{height:"80vh"}}>
             <p className="display-1 fw-bold" >
             Nmber Go Up
             </p>
             <p>
             With one token get exposure to a diversified portfolio of projects across multiple chains.
             </p>
-            <Box py={5}>
-                <Button size="large" className="btnStyle" style={{margin:"0 20px 5px 0", }} variant="contained">Enter App</Button>
-                <Button size="large" className="btnStyle" style={{margin:"0 0px 5px 0",}} variant="contained" >Documentation</Button>
-            </Box>
-        </Box>
+            <div className="py-5">
+                <button className="btnStyle fs-5" style={{margin:"0 20px 5px 0", }} >Enter App</button>
+                <button className="btnStyle fs-5" style={{margin:"0 0px 5px 0",}}  >Documentation</button>
+            </div>
+        </div>
       </>
     
   )

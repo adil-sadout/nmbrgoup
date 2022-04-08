@@ -1,8 +1,7 @@
 import React from 'react'
 import {NavLink} from "react-router-dom"
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container'
-import Box from '@material-ui/core/Box';
+
+
 
 
 function DashboardNavbar() {
@@ -12,10 +11,10 @@ function DashboardNavbar() {
 
 
   return (
-    <Container sx={{fontSize:"20px", textAlign:"center",margin:0, padding:0, minHeight:"100px", display:"flex", alignItems:"center", width:"90vh", justifyContent:"end"}}>
+    <div className='text-center d-none d-md-flex justify-content-end align-items-center fs-5' style={{minHeight:"100px"}}>
         
     
-        <Box sx={{width:"500px", display:"flex",justifyContent:"space-around", alignItems:"center"}}>
+        <div className='d-flex justify-content-around align-items-center' style={{width:"500px"}}>
 
             
                     <NavLink 
@@ -48,18 +47,18 @@ function DashboardNavbar() {
                     to="/Swap">Swap</NavLink>
 
                     <NavLink to="#">
-                        <Button className='btnStyle' style={{padding:"6px 15px", fontSize:"16px"}}  variant="text">Connect</Button>
+                        <button className='btnStyle fs-5 px-3 py-2' >Connect</button>
                     </NavLink>
             
 
             
 
-        </Box>
+        </div>
         
         
         
         
-    </Container>
+    </div>
   )
 }
 

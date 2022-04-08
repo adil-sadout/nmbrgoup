@@ -4,28 +4,28 @@ import Paper from "@mui/material/Paper"
 function Part3() {
   return (
     <>
-      <Paper elevation={0}   style={{backgroundColor:"inherit"}}  sx={{marginY:"100px",textAlign:"center",height:"80vh", flexDirection:"column",display:"flex", justifyContent:"center", alignItems:"center"}}>
-        <Box sx={{padding:"50px"}}>
-        <p className="fw-bold fs-6" style={{ color:"#d81384"}}>DEEP DEEP POOLS</p>
-        <h2 className="display-1 fw-bold p-0" style={{color:"white"}}>Liquidity</h2>
-        <p className="fs-5" style={{color:"white"}}>Sphere strategically buys back it's own liquidity which allows us to collect a yield on our own transactions.</p>
-        </Box>
-        <Box  sx={{padding:"50px"}} className="grid row">
+      <div  className="text-center d-flex flex-column justify-content-center align-items-center my-5" style={{height:"80vh"}}>
+        <div className="p-5">
+          <p className="fw-bold fs-6 text-redpink">DEEP DEEP POOLS</p>
+          <h2 className="display-1 fw-bold p-0 text-light">Liquidity</h2>
+          <p className="fs-5 text-light" >Sphere strategically buys back it's own liquidity which allows us to collect a yield on our own transactions.</p>
+        </div>
+        <div className="grid row p-2">
           <div className="col-12 col-md-4">
-            <p className="fw-bold fs-6" style={{ color:"#d81384"}}>TREASURY BALANCE</p>
-            <h2 className="display-3 fw-bold p-0" style={{color:"white"}}>$12.27M</h2>
+            <p className="fw-bold fs-6 text-redpink">TREASURY BALANCE</p>
+            <h2 className="display-3 fw-bold p-1 text-light">$12.27M</h2>
           </div>
           <div className="col-12 col-md-4">
-            <p className="fw-bold fs-6" style={{ color:"#d81384"}}>MARKET CAP</p>
-            <h2 className="display-3 fw-bold p-0" style={{color:"white"}}>92.01M</h2>
+            <p className="fw-bold fs-6 text-redpink">MARKET CAP</p>
+            <h2 className="display-3 fw-bold p-1 text-light">92.01M</h2>
           </div>
           <div className="col-12 col-md-4">
-            <p className="fw-bold fs-6" style={{ color:"#d81384"}}>APY</p>
-            <h2 className="display-3 fw-bold p-0" style={{color:"white"}}>99.90K%</h2>
+            <p className="fw-bold fs-6 text-redpink" >APY</p>
+            <h2 className="display-3 fw-bold p-1 text-light">99.90K%</h2>
           </div>
         
-        </Box>
-      </Paper>
+        </div>
+      </div>
     </>
   )
 }

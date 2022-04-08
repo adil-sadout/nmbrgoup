@@ -1,19 +1,16 @@
 import React from 'react'
 import {NavLink} from "react-router-dom"
-import Container from '@mui/material/Container'
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
 
 function LandingNavbar() {
   return (
-    <Container sx={{fontSize:"24px",margin:0, padding:0, minHeight:"100px", display:"flex", justifyContent:"space-between", alignItems:"center"}}>
+    <div className='fs-4 m-0 p-0 d-flex justify-content-between align-items-center' style={{ minHeight:"100px"}}>
         
-        <Box  p={1}>
+        <div className='p-1'>
             <NavLink to="/Dashboard">
-              <Button className='btnStyle' style={{padding:"8px 15px"}} variant="text">DASHBOARD</Button>
+              <button className='btnStyle fs-5 px-3 py-2'>DASHBOARD</button>
             </NavLink>
-        </Box>
-    </Container>
+        </div>
+    </div>
     
   )
 }

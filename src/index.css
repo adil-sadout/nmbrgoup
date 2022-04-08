@@ -25,17 +25,35 @@ p{
 }
 
 .secondaryBackground{
-  background: linear-gradient(to bottom, #06dfc2, #0575e6) !important;
+  background: linear-gradient(to bottom, #06dfc2, #0575e6) ;
+}
+
+
+.primary-bg{
+  background-color: #0F1228 ;
+}
+
+.secondary-bg{
+  background-color: #202337;
+}
+
+.text-redpink{
+  color: #d81384;
 }
 
 .btnStyle{
-  background: linear-gradient(to bottom, #06dfc2, #0575e6) !important;
-  
-  font-family:"poppins" !important;
-  font-weight:bold !important;
-  letter-spacing: 2px !important;
-  border-radius: 25px !important;
-  color: black !important;
+  background: linear-gradient(to bottom, #06dfc2, #0575e6) ;
+  border: none;
+  font-family:"poppins" ;
+  font-weight:bold ;
+  letter-spacing: 2px ;
+  border-radius: 25px ;
+  color: black ;
+  padding: 10px 15px;
+}
+
+.btnStyle:active{
+  background: linear-gradient(to bottom, #087a6b, #06305a) ;
 }
 
 
