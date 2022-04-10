@@ -5,7 +5,9 @@ import Part3 from "../component/landingpage/Part3"
 import Part4 from "../component/landingpage/Part4"
 import ParticlesBack from "../component/particles/ParticlesBack"
 
+
 function LandingPage() {
+  
   
 
   return (

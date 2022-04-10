@@ -16,8 +16,8 @@ function Part1() {
             With one token get exposure to a diversified portfolio of projects across multiple chains.
             </p>
             <div className="py-5">
-                <button className="btnStyle fs-5" style={{margin:"0 20px 5px 0", }} >Enter App</button>
-                <button className="btnStyle fs-5" style={{margin:"0 0px 5px 0",}}  >Documentation</button>
+                <button className="btnStyle fs-5 m-1">Enter App</button>
+                <button className="btnStyle fs-5 m-1">Documentation</button>
             </div>
         </div>
       </>

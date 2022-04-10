@@ -4,7 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from "@material-ui/core/IconButton";
 import {NavLink} from "react-router-dom";
 
-export default function App() {
+export default function HamburgerNavbar({ connectWalletHandler, disconnectWalletHandler, web3 }) {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   
 
@@ -22,7 +22,16 @@ export default function App() {
         >
           <div className="fs-4 fw-bold d-flex flex-column justify-content-center align-items-center mt-5" style={{width:"200px"}}>
 
-          <button className="btnStyle fs-5 px-3 py-2" >Connect</button>
+            <>
+                {
+                      
+                      (web3 === undefined)?
+                      <button onClick={connectWalletHandler} className="btnStyle fs-5 px-3 py-2" >Connect</button>:
+                      <button onClick={disconnectWalletHandler} className="btnStyle fs-5 px-3 py-2" >Disconnect</button>
+                }
+            </>
+
+            
 
             <NavLink to="/Dashboard" className="mt-5 p-1 text-dark">
               DASHBOARD

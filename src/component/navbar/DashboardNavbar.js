@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom"
 
 
 
-function DashboardNavbar() {
+function DashboardNavbar({connectWalletHandler, disconnectWalletHandler, web3}) {
 
     
     
@@ -14,12 +14,12 @@ function DashboardNavbar() {
     <div className='text-center d-none d-md-flex justify-content-end align-items-center fs-5' style={{minHeight:"100px"}}>
         
     
-        <div className='d-flex justify-content-around align-items-center' style={{width:"500px"}}>
+        <div className='d-flex justify-content-around align-items-center' style={{width:"600px"}}>
 
             
                     <NavLink 
                     style={({ isActive }) => ({
-                        borderBottom: isActive ? '2px solid #BFDBF7' :"white",
+                        borderBottom: isActive ? '2px solid #BFDBF7' :"",
                         paddingBottom: isActive ? "5px":"0",
                         color: isActive ? "#BFDBF7":"white",
                         padding:"inherit 10px"
@@ -46,9 +46,20 @@ function DashboardNavbar() {
                       })}
                     to="/Swap">Swap</NavLink>
 
-                    <NavLink to="#">
-                        <button className='btnStyle fs-5 px-3 py-2' >Connect</button>
+                    
+                    <>
+                    {
+                      
+                      (web3 === undefined)?
+                      <NavLink to="#">
+                        <button onClick={connectWalletHandler} className='btnStyle fs-5 px-3 py-2' >Connect</button>
+                      </NavLink>:
+                      <NavLink to="#">
+                        <button onClick={disconnectWalletHandler} className='btnStyle fs-5 px-3 py-2' >Disconnect</button>
                     </NavLink>
+                      
+                    }
+                    </>
             
 
             

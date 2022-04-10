@@ -6,12 +6,15 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from "react-router-dom";
+import {AppContext} from "./context/AppContext"
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <AppContext>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </AppContext>
   </React.StrictMode>,
   document.getElementById('root')
 );

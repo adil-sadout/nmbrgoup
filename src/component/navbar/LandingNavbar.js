@@ -7,7 +7,7 @@ function LandingNavbar() {
         
         <div className='p-1'>
             <NavLink to="/Dashboard">
-              <button className='btnStyle fs-5 px-3 py-2'>DASHBOARD</button>
+              <button className='btnStyle fs-6 px-3 py-2'>DASHBOARD</button>
             </NavLink>
         </div>
     </div>

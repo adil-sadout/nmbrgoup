@@ -7,7 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  cursor: url("../public/assets/mouse.png"), auto ;
+  cursor: url("../public/assets/neuron.png"), auto ;
 }
 
 a{
