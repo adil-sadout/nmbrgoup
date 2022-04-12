@@ -12,7 +12,7 @@ function Dashboard() {
   return (
     <>
       
-        <div className="container grid row g-1 rounded p-3 m-auto secondary-bg">
+        <div className="container grid row g-1 borderRadiusRounded p-3 m-auto secondary-bg">
           
           <div className="col-12 col-md-2 text-center rounded py-3 px-1 primary-bg ">
             <p>Wallet Addy</p>
@@ -30,7 +30,8 @@ function Dashboard() {
           </div>
         
           <div className="col-12 col-md-2 text-center rounded py-3 px-1 primary-bg" >
-            <p>ur gey</p>
+            <p>Token Price</p>
+            <p>$175.69</p>
           </div>
           
         </div>
