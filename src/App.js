@@ -1,5 +1,5 @@
 import Navbar from "./component/navbar/Navbar";
-import {Routes, Route,} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import LandingPage from "./route/LandingPage";
 import Dashboard from "./route/Dashboard";
 import Calculator from "./route/Calculator";
@@ -7,8 +7,11 @@ import Swap from "./route/Swap";
 import Docs from "./route/Docs";
 
 
-
 function App() {
+
+  
+
+
   return (
     <div className="App">
       <header>

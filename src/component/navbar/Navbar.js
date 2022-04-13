@@ -3,16 +3,15 @@ import LandingNavbar from './LandingNavbar'
 import HamburgerNavbar from "./HamburgerNavbar"
 import { useLocation } from 'react-router-dom'
 import {NavLink} from "react-router-dom";
-
-import { useContext, useState , useEffect} from 'react';
-import { Web3Context } from '../../context/AppContext';
+import { useContext , useEffect} from 'react';
+import { valuesContext } from '../../context/AppContext';
 import Web3 from "web3";
-
+import truncateEthAddress from 'truncate-eth-address';
 function Navbar() {
 
     
 
-    const {web3, setWeb3} = useContext(Web3Context)
+    const {web3, setWeb3, walletAddy, setWalletAddy} = useContext(valuesContext)
 
     
 
@@ -21,6 +20,7 @@ function Navbar() {
             try{
                 await window.ethereum.request({method:"eth_requestAccounts"})
                 setWeb3((new Web3(window.ethereum)))
+                
             }catch(err){
                 console.log(err.message)
             }
@@ -40,12 +40,14 @@ function Navbar() {
 
 
     useEffect(()=>{
+        if(web3?.currentProvider?.selectedAddress !==undefined){
+            setWalletAddy(truncateEthAddress(web3.currentProvider.selectedAddress))
+        }
         
-            
-        console.log(web3?.currentProvider?.selectedAddress)
-        
-        
+
     },[web3])
+
+    
     
 
     return (
@@ -61,8 +63,8 @@ function Navbar() {
                 <LandingNavbar/>:
                 <>
                     
-                    <DashboardNavbar connectWalletHandler={connectWalletHandler} disconnectWalletHandler={disconnectWalletHandler} web3={web3} />
-                    <HamburgerNavbar connectWalletHandler={connectWalletHandler} disconnectWalletHandler={disconnectWalletHandler} web3={web3} />
+                    <DashboardNavbar connectWalletHandler={connectWalletHandler} disconnectWalletHandler={disconnectWalletHandler} web3={web3} walletAddy={walletAddy} />
+                    <HamburgerNavbar connectWalletHandler={connectWalletHandler} disconnectWalletHandler={disconnectWalletHandler} web3={web3} walletAddy={walletAddy} />
                 
                 </>
             }

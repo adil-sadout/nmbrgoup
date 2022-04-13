@@ -4,7 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from "@material-ui/core/IconButton";
 import {NavLink} from "react-router-dom";
 
-export default function HamburgerNavbar({ connectWalletHandler, disconnectWalletHandler, web3 }) {
+export default function HamburgerNavbar({ connectWalletHandler, disconnectWalletHandler, web3, walletAddy }) {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   
 
@@ -20,14 +20,14 @@ export default function HamburgerNavbar({ connectWalletHandler, disconnectWallet
           onClose={()=> setIsDrawerOpen(false)}
           
         >
-          <div className="fs-4 fw-bold d-flex flex-column justify-content-center align-items-center mt-5" style={{width:"200px"}}>
+          <div className="fs-4 fw-bold d-flex flex-column justify-content-center align-items-center mt-5" style={{width:"250px"}}>
 
             <>
                 {
                       
-                      (web3 === undefined)?
+                      (web3?.currentProvider?.selectedAddress === undefined)?
                       <button onClick={connectWalletHandler} className="btnStyle fs-5 px-3 py-2" >Connect</button>:
-                      <button onClick={disconnectWalletHandler} className="btnStyle fs-5 px-3 py-2" >Disconnect</button>
+                      <button className="btnStyle fs-5 px-3 py-2" >{walletAddy}</button>
                 }
             </>
 

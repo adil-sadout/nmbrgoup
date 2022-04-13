@@ -1,14 +1,14 @@
 import BarChart from "../component/charts/BarChart"
-import { useContext, useState} from 'react';
-import { Web3Context } from '../context/AppContext';
-import truncateEthAddress from 'truncate-eth-address'
+import { useContext} from 'react';
+import { valuesContext } from '../context/AppContext';
+
 
 
 function Dashboard() {
 
-  const {web3} = useContext(Web3Context)
-
-
+  const {web3, tokenPrice, money, walletAddy} = useContext(valuesContext)
+  
+  
   return (
     <>
       
@@ -17,8 +17,8 @@ function Dashboard() {
           <div className="col-12 col-md-2 text-center rounded py-3 px-1 primary-bg ">
             <p>Wallet Addy</p>
             {
-              (web3?.currentProvider?.selectedAddress !==undefined)?
-              <p>{truncateEthAddress(web3?.currentProvider?.selectedAddress)}</p>:
+              (walletAddy !==undefined)?
+              <p>{walletAddy}</p>:
               <p>Please Connect First</p>
             }
             
@@ -31,7 +31,7 @@ function Dashboard() {
         
           <div className="col-12 col-md-2 text-center rounded py-3 px-1 primary-bg" >
             <p>Token Price</p>
-            <p>$175.69</p>
+            <p>{money.format(tokenPrice)}</p>
           </div>
           
         </div>

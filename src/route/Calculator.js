@@ -1,10 +1,10 @@
-import {useState} from "react"
-
+import {useState, useContext} from "react"
+import {valuesContext} from "../context/AppContext"
 function Calculator() {
 
-  
+  const {tokenPrice, money}=useContext(valuesContext)
 
-  const [tokenPrice, setTokenPrice]= useState(175.69)
+  
   const [tokenOwned, setTokenOwned]= useState(1000)
   const [apy, setApy]= useState(1)
   const [returns, setReturns]= useState(0)
@@ -13,6 +13,8 @@ function Calculator() {
     
     setReturns((tokenOwned)*(tokenPrice)*((apy)/100))
   }
+
+  
 
 
   return (
@@ -24,15 +26,15 @@ function Calculator() {
           <div className="py-5 borderRadiusRounded secondary-bg col-12 col-md-5 text-center d-flex flex-column justify-content-center align-items-center my-1">
             <div className="d-flex flex-column col-10 pb-3">
               <label htmlFor="">Token Amount</label>
-              <input className="form-control" type="number" value={tokenOwned} onChange={((e)=>{setTokenOwned(e.target.value)})}/>
+              <input className="form-control  text-center" type="number" value={tokenOwned} onChange={((e)=>{setTokenOwned(e.target.value)})}/>
             </div>
             <div className="d-flex flex-column col-10 pb-3">
               <label htmlFor="">APY</label>
-              <input className="form-control" value={apy} onChange={((e)=>{setApy(e.target.value)})} type="number" />
+              <input className="form-control text-center" value={apy} onChange={((e)=>{setApy(e.target.value)})} type="number" />
             </div>
             <div className="d-flex flex-column col-12">
               <p >Current Price</p>
-              <p className="fs-5 fw-bold">${tokenPrice}</p>
+              <p className="fs-5 fw-bold">{money.format(tokenPrice)}</p>
             </div>
             <div className="d-flex flex-column col-12 px-4 pt-3">
               <button className="btnStyle" onClick={calculateReturns}>Calculate Returns</button>
@@ -50,7 +52,8 @@ function Calculator() {
             
             
               <p className="fw-bold fs-6">POTENTIAL RETURN</p>
-              <p className="display-1 text-break">${returns}</p>
+              <p className="display-1 text-break">{money.format(returns)}</p>
+              <p className="">Initial Investement Excluded</p>
             
           </div>
 
