@@ -6,7 +6,9 @@ function Part4() {
     const color1="#275DAD";
     const color2="#0B6E4F";
     const color3="#721817";
-    const color4="#FA9F42"
+    const color4="#FA9F42";
+    const bgcolor1="linear-gradient(to bottom, #06dfc2, #0575e6)";
+    const bgcolor2="linear-gradient(to top, #06dfc2, #0575e6)";
   return (
     <>
         <div className="p-md-5 p-2 mt-5" >
@@ -23,8 +25,8 @@ function Part4() {
                 <VerticalTimelineElement
                     
                     date="Private sale"
-                    iconStyle={{ backgroundColor: color1}}
-                    contentStyle={{ background:  color1, borderRadius:"20px", boxShadow:"none"}}
+                    iconStyle={{ background: bgcolor1}}
+                    contentStyle={{ background: bgcolor1, borderRadius:"20px", boxShadow:"none"}}
                     contentArrowStyle={{ borderRight: `7px solid ${color1}`, margin:"-1px"}}
                     
                 >
@@ -38,8 +40,8 @@ function Part4() {
                 <VerticalTimelineElement
                     
                     date="Presale"
-                    iconStyle={{ background:  color1, color: '#fff' }}
-                    contentStyle={{ background:  color1, borderRadius:"20px", boxShadow:"none" }}
+                    iconStyle={{ background: bgcolor2, color: '#fff' }}
+                    contentStyle={{ background: bgcolor2, borderRadius:"20px", boxShadow:"none" }}
                     contentArrowStyle={{ borderRight: `7px solid ${color1}`, margin:"-1px"}}
                 >
                     <h3>Art Director</h3>
@@ -52,9 +54,9 @@ function Part4() {
                 <VerticalTimelineElement
                     
                     date="Post sale"
-                    iconStyle={{ background:  color2, color: '#fff' }}
-                    contentStyle={{ background:  color2, borderRadius:"20px", boxShadow:"none" }}
-                    contentArrowStyle={{ borderRight: `7px solid ${color2}`, margin:"-1px"}}
+                    iconStyle={{ background: bgcolor1, color: '#fff' }}
+                    contentStyle={{ background: bgcolor1, borderRadius:"20px", boxShadow:"none" }}
+                    contentArrowStyle={{ borderRight: `7px solid ${color1}`, margin:"-1px"}}
                 >
                     <h3>Web Designer</h3>
                     <h4>Los Angeles, CA</h4>
@@ -66,9 +68,9 @@ function Part4() {
                 <VerticalTimelineElement
                     
                     date="yo mama sale"
-                    iconStyle={{ background:  color2, color: '#fff' }}
-                    contentStyle={{ background:  color2, borderRadius:"20px", boxShadow:"none" }}
-                    contentArrowStyle={{ borderRight: `7px solid ${color2}`, margin:"-1px"}}
+                    iconStyle={{ background: bgcolor2, color: '#fff' }}
+                    contentStyle={{ background: bgcolor2, borderRadius:"20px", boxShadow:"none" }}
+                    contentArrowStyle={{ borderRight: `7px solid ${color1}`, margin:"-1px"}}
                 >
                     <h3>Web Designer</h3>
                     <h4>San Francisco, CA</h4>
@@ -80,9 +82,9 @@ function Part4() {
                 <VerticalTimelineElement
                     
                     date="dez"
-                    iconStyle={{ background:  color3, color: '#fff' }}
-                    contentStyle={{ background:  color3, borderRadius:"20px", boxShadow:"none" }}
-                    contentArrowStyle={{ borderRight: `7px solid ${color3}`, margin:"-1px"}}
+                    iconStyle={{ background: "linear-gradient(to bottom, #06dfc2, #0575e6)", color: '#fff' }}
+                    contentStyle={{ background: "linear-gradient(to bottom, #06dfc2, #0575e6)", borderRadius:"20px", boxShadow:"none" }}
+                    contentArrowStyle={{ borderRight: `7px solid ${color1}`, margin:"-1px"}}
                 >
                     <h3>Content Marketing for Web, Mobile and Social Media</h3>
                     <h4>Online Course</h4>
@@ -94,9 +96,9 @@ function Part4() {
                 <VerticalTimelineElement
                     
                     date="nuts"
-                    iconStyle={{ background:  color3, color: '#fff' }}
-                    contentStyle={{ background:  color3, borderRadius:"20px", boxShadow:"none" }}
-                    contentArrowStyle={{ borderRight: `7px solid ${color3}`, margin:"-1px"}}
+                    iconStyle={{ background:  bgcolor2, color: '#fff' }}
+                    contentStyle={{ background:  bgcolor2, borderRadius:"20px", boxShadow:"none" }}
+                    contentArrowStyle={{ borderRight: `7px solid ${color1}`, margin:"-1px"}}
                 >
                     <h3>Agile Development Scrum Master</h3>
                     <h4>Certification</h4>
@@ -106,8 +108,8 @@ function Part4() {
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
-                    iconStyle={{ background: color4, color: '#fff' }}
-                    contentStyle={{ background:  color4, borderRadius:"20px", boxShadow:"none" }}
+                    iconStyle={{ background: bgcolor1, color: '#fff' }}
+                    contentStyle={{ background:  bgcolor1, borderRadius:"20px", boxShadow:"none" }}
                     contentArrowStyle={{ borderRight: `7px solid darkgray`, margin:"-1px"}}
                     date="gottem"
                 >
@@ -121,7 +123,7 @@ function Part4() {
                 </VerticalTimelineElement>
                 
                 <VerticalTimelineElement
-                    iconStyle={{ background: color4, color: '#fff', borderRadius:"20px" }}
+                    iconStyle={{ background: color1, color: '#fff', borderRadius:"20px" }}
                     
                     date="And more to come..."
                 />

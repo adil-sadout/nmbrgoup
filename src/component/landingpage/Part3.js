@@ -4,7 +4,7 @@ import Paper from "@mui/material/Paper"
 function Part3() {
   return (
     <>
-      <div  className="p-5 text-center d-flex flex-column justify-content-center align-items-center text-dark" style={{backgroundColor:"#275DAD",borderRadius:"20px", height:"80vh"}}>
+      <div  className="p-5 text-center d-flex flex-column justify-content-center align-items-center text-dark" style={{backgroundColor:"#275DAD",borderRadius:"20px", minHeight:"70vh"}}>
         <div className="pb-5">
           <p className="fw-bold fs-6 text-redpink">DEEP DEEP POOLS</p>
           <h2 className="display-1 fw-bold p-0 text-light pb-5">Liquidity</h2>

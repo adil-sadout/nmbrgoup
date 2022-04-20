@@ -8,19 +8,19 @@ function Part5() {
       <p className='text-center p-2 display-2 fw-bold'>Stay up to date</p>
       <div className='p-2'>
         <a className='m-2' href="#tg">
-          <img width="40px" src="assets/sphere.png" alt="" />
+          <img width="30px" src="assets/sphere.png" alt="" />
         </a>
         
         <a className='m-2' href="#twitter">
-          <img width="40px" src="assets/sphere.png" alt="" />
+          <img width="30px" src="assets/sphere.png" alt="" />
         </a>
 
         <a className='m-2' href="#discord">
-          <img width="40px" src="assets/sphere.png" alt="" />
+          <img width="30px" src="assets/sphere.png" alt="" />
         </a>
 
         <a className='m-2' href="#urmom">
-          <img width="40px" src="assets/sphere.png" alt="" />
+          <img width="30px" src="assets/sphere.png" alt="" />
         </a>
       </div>
       <img width="100px" src="assets/brainlogo.webp" alt=""  className='p-2'/>
