@@ -3,7 +3,7 @@
 function Part2() {
   return (
     <>
-        <div className="p-5" style={{backgroundColor:"#1D224F",borderRadius:"20px"}}>
+        <div className="p-5" style={{backgroundColor:"#275DAD",borderRadius:"20px"}}>
             <div className="grid row p-1 px-sm-5">
                 <div className="col-md-6  d-flex flex-column justify-content-center ">
                     <p className="fw-bold fs-6" style={{ color:"#d81384"}}>PLANNED PROFITABILITY</p>
