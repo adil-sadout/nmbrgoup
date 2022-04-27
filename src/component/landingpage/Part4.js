@@ -8,6 +8,7 @@ function Part4() {
     const color2="#0B6E4F";
     const color3="#721817";
     const color4="#FA9F42";
+    const color5="#275DAD"
     const bgcolor1="linear-gradient(to left, #06dfc2, #0575e6)";
     const bgcolor2="linear-gradient(to right, #06dfc2, #0575e6)";
   return (
@@ -27,7 +28,7 @@ function Part4() {
                     
                     date="Private sale"
                     iconStyle={{ background: color1}}
-                    contentStyle={{ background: bgcolor1, borderRadius:"20px", boxShadow:"none"}}
+                    contentStyle={{ background: bgcolor1, borderRadius:"20px", boxShadow:"none", opacity:"90%"}}
                     contentArrowStyle={{ borderRight: `none`, margin:"-1px"}}
                     icon={<BsFillAlarmFill />}
                     
@@ -43,7 +44,7 @@ function Part4() {
                     
                     date="Presale"
                     iconStyle={{ background: color1, color: '#fff' }}
-                    contentStyle={{ background: bgcolor2, borderRadius:"20px", boxShadow:"none" }}
+                    contentStyle={{ background: bgcolor2, borderRadius:"20px", boxShadow:"none", opacity:"90%"}}
                     contentArrowStyle={{ borderRight: `none`, margin:"-1px"}}
                     icon={<BsFillBrightnessAltLowFill />}
                 >
@@ -58,7 +59,7 @@ function Part4() {
                     
                     date="Post sale"
                     iconStyle={{ background: color1, color: '#fff' }}
-                    contentStyle={{ background: bgcolor1, borderRadius:"20px", boxShadow:"none" }}
+                    contentStyle={{ background: bgcolor1, borderRadius:"20px", boxShadow:"none", opacity:"90%" }}
                     contentArrowStyle={{ borderRight: `none`, margin:"-1px"}}
                     icon={<BsFillBrightnessAltHighFill />}
                 >
@@ -73,7 +74,7 @@ function Part4() {
                     
                     date="yo mama sale"
                     iconStyle={{ background: color1, color: '#fff' }}
-                    contentStyle={{ background: bgcolor2, borderRadius:"20px", boxShadow:"none" }}
+                    contentStyle={{ background: bgcolor2, borderRadius:"20px", boxShadow:"none", opacity:"90%" }}
                     contentArrowStyle={{ borderRight: `none`, margin:"-1px"}}
                     icon={<BsFillBrightnessLowFill />}
                 >
@@ -88,7 +89,7 @@ function Part4() {
                     
                     date="dez"
                     iconStyle={{ background: color1, color: '#fff' }}
-                    contentStyle={{ background: bgcolor1, borderRadius:"20px", boxShadow:"none" }}
+                    contentStyle={{ background: bgcolor1, borderRadius:"20px", boxShadow:"none", opacity:"90%" }}
                     contentArrowStyle={{ borderRight: `none`, margin:"-1px"}}
                     icon={<BsFillBrightnessHighFill />}
                 >
@@ -103,7 +104,7 @@ function Part4() {
                     
                     date="nuts"
                     iconStyle={{ background:  color1, color: '#fff' }}
-                    contentStyle={{ background:  bgcolor2, borderRadius:"20px", boxShadow:"none" }}
+                    contentStyle={{ background:  bgcolor2, borderRadius:"20px", boxShadow:"none", opacity:"90%" }}
                     contentArrowStyle={{ borderRight: `none`, margin:"-1px"}}
                     icon={<BsBrightnessHigh />}
                 >
@@ -116,7 +117,7 @@ function Part4() {
 
                 <VerticalTimelineElement
                     iconStyle={{ background: color1, color: '#fff' }}
-                    contentStyle={{ background:  bgcolor1, borderRadius:"20px", boxShadow:"none" }}
+                    contentStyle={{ background:  bgcolor1, borderRadius:"20px", boxShadow:"none", opacity:"90%" }}
                     contentArrowStyle={{ borderRight: `none`, margin:"-1px"}}
                     date="gottem"
                     icon={<BsCheckLg />}

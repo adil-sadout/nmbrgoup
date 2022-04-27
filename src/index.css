@@ -1,3 +1,8 @@
+:root {
+  --main-btn-background: linear-gradient(to bottom, #06dfc2, #0575e6) ;
+  /*--main-btn-background: linear-gradient(to bottom, #06dfc2, #0575e6) ;*/
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +11,7 @@ body {
   font-family: "poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 
   cursor: url("../public/assets/neuron.png"), auto ;
 }
@@ -49,12 +55,16 @@ p{
   background-color: #202337;
 }
 
-.text-redpink{
+.color-redpink{
   color: #d81384;
 }
 
+.opacity-90{
+  opacity: 90%;
+}
+
 .btnStyle{
-  background: linear-gradient(to bottom, #06dfc2, #0575e6) ;
+  background: var(--main-btn-background);
   border: none;
   font-family:"poppins" ;
   font-weight:bold ;
@@ -62,6 +72,10 @@ p{
   border-radius: 25px ;
   color: black ;
   padding: 10px 15px;
+}
+
+.fadedbluebg{
+  background: #275DAD;
 }
 
 .btnStyle:active{
