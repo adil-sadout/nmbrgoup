@@ -4,7 +4,7 @@ import Part2 from "../component/landingpage/Part2"
 import Part3 from "../component/landingpage/Part3"
 import Part4 from "../component/landingpage/Part4"
 import Part5 from "../component/landingpage/Part5"
-import ParticlesBack from "../component/particles/ParticlesBack"
+
 
 
 function LandingPage() {
@@ -13,7 +13,7 @@ function LandingPage() {
 
   return (
     <div className="container">
-      <ParticlesBack/>
+      
       <div>
         <Part1/>
         <Part2/>

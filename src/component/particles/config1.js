@@ -107,7 +107,7 @@ export const config1 = {
             sides:"4"
         },
         image:{
-          src:"./assets/brainglow3.png",
+          src:"./assets/apetoken.png",
           replaceColor :true,
           fill:true
           

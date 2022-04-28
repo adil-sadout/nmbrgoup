@@ -5,7 +5,7 @@ import Dashboard from "./route/Dashboard";
 import Calculator from "./route/Calculator";
 import Swap from "./route/Swap";
 import Docs from "./route/Docs";
-
+import ParticlesBack from "./component/particles/ParticlesBack"
 
 function App() {
 
@@ -17,8 +17,9 @@ function App() {
       <header>
         <Navbar/>
       </header>
-
-      <div className="container" >
+      <ParticlesBack/>
+      
+      <div className="container py-4" >
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/Dashboard" element={<Dashboard />} />

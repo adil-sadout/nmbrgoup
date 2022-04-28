@@ -18,7 +18,7 @@ function Calculator() {
 
 
   return (
-    <div className="p-3 grid py-5">
+    <div className="grid ">
       <div className="row d-flex justify-content-around">
 
       

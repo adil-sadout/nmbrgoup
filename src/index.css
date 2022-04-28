@@ -6,7 +6,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #0F1228;
+  
   color: white;
   font-family: "poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -61,6 +61,10 @@ p{
 
 .opacity-90{
   opacity: 90%;
+}
+
+.opacity-95{
+  opacity: 95%;
 }
 
 .btnStyle{
