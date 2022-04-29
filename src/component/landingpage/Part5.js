@@ -23,7 +23,7 @@ function Part5() {
           <img width="30px" src="assets/sphere.png" alt="" />
         </a>
       </div>
-      <img width="100px" src="assets/brainlogo.webp" alt=""  className='p-2'/>
+      <img width="100px" src="assets/apetoken1.png" alt=""  className='p-2'/>
       <p className='p-2'>Probably Something.</p>
     </div>
   )

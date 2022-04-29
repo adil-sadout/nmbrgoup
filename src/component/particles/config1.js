@@ -106,12 +106,21 @@ export const config1 = {
         polygon:{
             sides:"4"
         },
-        image:{
-          src:"./assets/apetoken.png",
-          replaceColor :true,
-          fill:true
+        image:
+          [
+            
+            
+            {
+              src:"./assets/apetoken1.png",
+              replaceColor :true,
+              fill:true
+            },
+            
+            
+          ]
           
-        },
+          
+        ,
       },
       size: {
         random: true,
