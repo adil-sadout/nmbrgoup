@@ -1,5 +1,5 @@
 :root {
-  --main-btn-background: linear-gradient(to bottom, #e2a447, #805b2a) ;
+  --main-btn-background: linear-gradient(to bottom, #06dfc2, #0575e6) ;
   /*--main-btn-background: linear-gradient(to bottom, #06dfc2, #0575e6) ;*/
 }
 
@@ -13,7 +13,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
 
-  cursor: url("../public/assets/banana3.png"), auto ;
+  cursor: url("../public/assets/neuron.png"), auto ;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -39,23 +39,33 @@ p{
 }
 
 .regularBackground{
-  background: rgb(105, 72, 29)
+  background-color: #0F1228;
+}
+
+.secondaryBackground{
+  background: linear-gradient(to bottom, #06dfc2, #0575e6) ;
 }
 
 
+.primary-bg{
+  background-color: #0F1228 ;
+}
 
 .secondary-bg{
-  background: var(--main-btn-background);
+  background-color: #202337;
 }
 
-
+.color-redpink{
+  color: #d81384;
+}
 
 .opacity-90{
   opacity: 90%;
-  
 }
 
-
+.opacity-95{
+  opacity: 95%;
+}
 
 .btnStyle{
   background: var(--main-btn-background);
@@ -68,13 +78,12 @@ p{
   padding: 10px 15px;
 }
 
-.fadedbg{
-  background: var(--main-btn-background);
-  opacity: 95%;
+.fadedbluebg{
+  background: #275DAD;
 }
 
 .btnStyle:active{
-  background: linear-gradient(to bottom, #86632d, #1f160a) ;
+  background: linear-gradient(to bottom, #087a6b, #06305a) ;
 }
 
 

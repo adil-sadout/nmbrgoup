@@ -54,7 +54,7 @@ function Navbar() {
         <div className='container-md d-flex justify-content-between align-items-center' style={{letterSpacing:"2px", minHeight:"80px"}}>
             <div className='d-flex justify-content-center align-items-center p-1' >
                 <NavLink className="" to="/">    
-                    <img width="90px" src="assets/apeimage2.png" alt="" />
+                    <img width="70px" src="assets/brainlogo.webp" alt="" />
                 </NavLink>
             </div>
             <div className='d-inline-block p-1'>

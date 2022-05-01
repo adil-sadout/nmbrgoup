@@ -6,9 +6,6 @@ import {NavLink} from "react-router-dom"
 
 function DashboardNavbar({connectWalletHandler, disconnectWalletHandler, web3, walletAddy}) {
 
-
-  const colorSelected = "yellow";
-
     
     
 
@@ -22,9 +19,9 @@ function DashboardNavbar({connectWalletHandler, disconnectWalletHandler, web3, w
             
                     <NavLink 
                     style={({ isActive }) => ({
-                        borderBottom: isActive ? `2px solid  ${colorSelected}` :"",
+                        borderBottom: isActive ? '2px solid #BFDBF7' :"",
                         paddingBottom: isActive ? "5px":"0",
-                        color: isActive ? colorSelected :"white",
+                        color: isActive ? "#BFDBF7":"white",
                         padding:"inherit 10px"
                       })}
                     to="/Dashboard">Dashboard</NavLink>
@@ -33,8 +30,8 @@ function DashboardNavbar({connectWalletHandler, disconnectWalletHandler, web3, w
             
                     <NavLink 
                     style={({ isActive }) => ({
-                        borderBottom: isActive ? `2px solid  ${colorSelected}` :"white",
-                        color: isActive ?  colorSelected :"white",
+                        borderBottom: isActive ? '2px solid #BFDBF7' :"white",
+                        color: isActive ? "#BFDBF7":"white",
                         paddingBottom:isActive? "5px":"0"
                       })}
                     to="/Calculator">Calculator</NavLink>
@@ -43,9 +40,9 @@ function DashboardNavbar({connectWalletHandler, disconnectWalletHandler, web3, w
             
                     <NavLink 
                     style={({ isActive }) => ({
-                        borderBottom: isActive ? `2px solid  ${colorSelected}` :"white",
+                        borderBottom: isActive ? '2px solid #BFDBF7' :"white",
                         paddingBottom:isActive? "5px":"0",
-                        color: isActive ? colorSelected :"white",
+                        color: isActive ? "#BFDBF7":"white",
                       })}
                     to="/Swap">Swap</NavLink>
 

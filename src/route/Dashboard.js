@@ -14,7 +14,7 @@ function Dashboard() {
       
         <div className="container grid row g-1 borderRadiusRounded p-3 m-auto secondary-bg ">
           
-          <div className="col-12 col-md-2 text-center rounded py-3 px-1 regularBackground ">
+          <div className="col-12 col-md-2 text-center rounded py-3 px-1 primary-bg ">
             <p>Wallet Addy</p>
             {
               (walletAddy !==undefined)?
@@ -29,7 +29,7 @@ function Dashboard() {
             <BarChart/>
           </div>
         
-          <div className="col-12 col-md-2 text-center rounded py-3 px-1 regularBackground" >
+          <div className="col-12 col-md-2 text-center rounded py-3 px-1 primary-bg" >
             <p>Token Price</p>
             <p>{money.format(tokenPrice)}</p>
           </div>

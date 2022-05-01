@@ -14,7 +14,7 @@ export const config1 = {
         },
         onHover: {
           enable: true,
-          mode: "attract",
+          mode: "repulse",
           
         },
         resize: true,
@@ -111,11 +111,10 @@ export const config1 = {
             
             
             {
-              src:"./assets/apeimage3.png",
+              src:"./assets/apetoken1.png",
               replaceColor :true,
               fill:true
             },
-            
             
             
           ]
