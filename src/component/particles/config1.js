@@ -14,7 +14,7 @@ export const config1 = {
         },
         onHover: {
           enable: true,
-          mode: "repulse",
+          mode: "attract",
           
         },
         resize: true,
@@ -111,10 +111,11 @@ export const config1 = {
             
             
             {
-              src:"./assets/apetoken1.png",
+              src:"./assets/apeimage3.png",
               replaceColor :true,
               fill:true
             },
+            
             
             
           ]
@@ -124,7 +125,7 @@ export const config1 = {
       },
       size: {
         random: true,
-        value: 30,
+        value: 50,
       },
       
     },

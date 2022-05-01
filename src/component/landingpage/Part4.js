@@ -5,14 +5,10 @@ import { BsFillBrightnessAltLowFill, BsFillBrightnessAltHighFill, BsFillBrightne
 function Part4() {
     const colorBorder="#abc2ed";
     const color1="black";
-    const color2="#0B6E4F";
-    const color3="#721817";
-    const color4="#FA9F42";
-    const color5="#275DAD"
-    const bgcolor1="linear-gradient(to right, #144257, #275DAD)";
-    const bgcolor2="linear-gradient(to right, #164b63, #275DAD)";
-    const bgcolor3="linear-gradient(to left, #06dfc2, #0575e6)";
-    const bgcolor4="linear-gradient(to right, #06dfc2, #0575e6)";
+    
+    const bgcolor1="linear-gradient(to bottom, #e2a447, #805b2a)";
+    const bgcolor2="linear-gradient(to bottom, #e2a447, #805b2a)";
+    
     
   return (
     <>

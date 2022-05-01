@@ -8,10 +8,11 @@ function BarChart() {
         labels: ['01', '02', '03', '04', '05', '06','07','08','09','10','11','12'],
         datasets: [{
             label: 'Price',
-            data: [1, 3, 7, 5, 12, 13, 15, 17, 25, 15, 19, 14],
+            data: [7, 3, 7, 5, 12, 13, 10, 19, 13, 15, 19, 14],
+            
+            
             backgroundColor: [
-                '#18d8d880'
-                
+                '#805b2a'
             ],
             borderColor: [
                 'transparent'
@@ -24,8 +25,20 @@ function BarChart() {
     }}
     options={{
         scales: {
+            
             y: {
-                beginAtZero: true
+                ticks:{
+                    beginAtZero: true,
+                    color: 'white',
+                    
+                }
+            },
+            x: {
+                ticks:{
+                    
+                    color: 'white',
+                    
+                }
             }
         }
     }}
